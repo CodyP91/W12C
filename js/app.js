@@ -32,28 +32,3 @@ console.log("Error logging in:", error); // Log the error to the console
 if (document.cookie.indexOf("session_token=") === -1) {
 window.location.href = "index.html";
 }
-
-// Define success and failure functions for the meal API requests
-function meal_success(response) {
-// Code to handle successful API response
-}
-
-function meal_failure(error) {
-// Code to handle failed API response
-}
-
-// Make two GET requests to the meal API using Axios
-axios.request({
-url: www.themealdb.com/api/json/v1/1/random.php
-}).then(meal_success).catch(meal_failure);
-
-axios.request({
-url: www.themealdb.com/api/json/v1/1/search.php,
-params: {
-s: Carrot
-}
-}).then(meal_success).catch(meal_failure);
-
-// Get the value of the username input field
-let username_input = document.getElementById(username_input);
-let username_value = username_input[value];
